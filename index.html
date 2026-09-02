@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Judson's Portfolio</title>
+    <!-- Font Awesome provides the brand and email icons used below. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero section -->
+    <header class="hero">
+      <nav class="top-nav">
+        <div class="logo">welcome to my portfolio!</div>
+        <div class="nav-links">
+          <a href="#bio">Bio</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Hi, I'm Dan Judson!</h1>
+          <p>
+            I'm a student at ASU learning how to use HTML and CSS to combine design,
+            creativity, and problem-solving!
+          </p>
+          <div class="hero-buttons">
+            <a class="button primary" href="#skills">My Skills</a>
+            <a class="button secondary" href="#bio">About me!</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="profile-card">
+            <img src="img/dan.JPG" alt="Dan Judson" class="profile-photo" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bio section -->
+    <main>
+      <section id="bio" class="bio section">
+        <h2>About me!</h2>
+        <div class="bio-content">
+          <div class="bio-text">
+            <p>
+              I've always been fascinated by the intersection of design and technology, and I love exploring new ways to create engaging user experiences.
+            </p>
+            <p>
+              Creating interfaces that simplify and enhance the user experience is my mission every time I'm designing and coding.
+            </p>
+            <p>
+              Outside of web development, my hobbies include gaming, reading, and working on my Dungeons & Dragons homebrew campaign!
+            </p>
+          </div>
+          <div class="bio-info">
+            <ul>
+              <li><strong>Location:</strong> Tampa, FL</li>
+              <li><strong>Focus:</strong> UI Design &amp; Front-end Development</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+      <section id="skills" class="skills section">
+        <h2>Skills & Proficiencies</h2>
+        <div class="skill-list">
+          <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-figma"></i>
+            <span>Figma</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Problem Solving</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-palette"></i>
+            <span>Creative Design</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="contact section">
+        <h2>Contact</h2>
+        <div class="bio-info contact-card">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-badge linkedin" href="https://www.linkedin.com/in/danvjudson/" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-badge email" href="mailto:danvjudson@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-badge github" href="https://github.com/danvjud" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </body>
 </html>

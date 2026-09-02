@@ -1,1 +1,369 @@
-/* Add you CSS here */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --cream: #f8f3ea;
+  --sand: #f6f0de;
+  --peach: #ffd9c7;
+  --sky: #dff3ff;
+  --lavender: #f8e8ff;
+  --blue: #3f80da;
+  --orange: #f4a261;
+  --orange-deep: #d97706;
+  --white: #ffffff;
+  --navy: #173c70;
+  --shadow: rgba(29, 53, 87, 0.12);
+}
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--sand);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+/* General section styles */
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+.logo,
+.profile-card h2,
+.button,
+.skill-item {
+  font-family: 'Baloo 2', 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--navy);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, var(--peach), var(--sky) 45%, var(--lavender));
+  color: var(--navy);
+  padding: 20px 20px 80px;
+}
+
+.top-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  background: rgba(255, 255, 255, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--navy);
+}
+
+.nav-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--navy);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: #dbeafe;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3.3rem;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  max-width: 550px;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  border: 2px solid transparent;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.primary {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+.secondary {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: var(--navy);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 260px;
+  height: 260px;
+  background-color: var(--orange-deep);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(29, 53, 87, 0.18);
+  border: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Bio section */
+.bio-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.bio-text,
+.bio-info {
+  flex: 1;
+}
+
+.bio-text p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.bio-info {
+  background: linear-gradient(135deg, #fff4d6, #dff3ff);
+  border: 3px solid var(--orange);
+  border-radius: 24px;
+  padding: 24px 26px;
+  box-shadow: 0 10px 24px var(--shadow);
+}
+
+.bio-info ul {
+  list-style: none;
+}
+
+.bio-info li {
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.52);
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+
+.contact-card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 18px;
+  padding: 8px;
+  border: 1px solid rgba(29, 53, 87, 0.08);
+}
+
+.contact-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-badge:hover {
+  color: var(--white);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 7px 14px rgba(29, 53, 87, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.linkedin {
+  background-color: #0a66c2;
+}
+
+.email {
+  background-color: #d97706;
+}
+
+.github {
+  background-color: #24292f;
+}
+
+/* Skills section */
+.skills {
+  background-color: var(--sand);
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 1.15rem;
+  min-width: 210px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.62);
+  border: 2px solid rgba(244, 162, 97, 0.45);
+  border-radius: 18px;
+  box-shadow: 0 8px 18px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.skill-item:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 18px var(--shadow), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.skill-item i {
+  color: var(--orange-deep);
+  font-size: 1.7rem;
+}
+
+@media (max-width: 700px) {
+  .hero-content,
+  .bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 24px;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero-text p,
+  .hero-text h1 {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+  }
+
+  .contact-list {
+    flex-direction: column;
+  }
+}
