@@ -331,6 +331,102 @@ h2 {
   font-size: 1.7rem;
 }
 
+/* Projects section */
+.projects {
+  background-color: var(--sand);
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: var(--white);
+  border: 2px solid rgba(244, 162, 97, 0.45);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 18px var(--shadow);
+  flex: 1;
+  min-width: 260px;
+  max-width: 280px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.project-card h3 {
+  font-family: 'Baloo 2', 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin: 0;
+  flex: 1;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  color: var(--white);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.project-link:hover {
+  background-color: var(--orange-deep);
+}
+
+.project-link i {
+  font-size: 1rem;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin-bottom: 16px;
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  background-color: rgba(244, 162, 97, 0.2);
+  color: var(--orange-deep);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
 @media (max-width: 700px) {
   .hero-content,
   .bio-content {
@@ -365,5 +461,14 @@ h2 {
 
   .contact-list {
     flex-direction: column;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-card {
+    max-width: 100%;
   }
 }
